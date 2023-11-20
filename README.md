@@ -3,8 +3,7 @@ Criando uma Linguagem de programação futebolística para a matéria de Lógica
 
 # EBNF
 ```go
-<sentence> ::= ( "λ" | <declare> | <assign> | <conditional> | <loop> )
-<declare> ::= <identifier>, ( "int" | "string" ), [ "=", <boolean expression> ]
+<sentence> ::= ( "λ" | <assign> | <conditional> | <loop> )
 <assign> ::= <identifier>, "=", <boolean expression>
 <conditional> ::= "If", <boolean expression>, <block>, [ "Else:", <block> ]
 <loop> ::= "For", <boolean expression>, <block>
@@ -32,3 +31,6 @@ Criando uma Linguagem de programação futebolística para a matéria de Lógica
 - Igualdade(==): Draw
 - Maior que(>): Win
 - Menor que(<): Loss
+- True: OnSide
+- False: OffSide
+- Not: Not
