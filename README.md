@@ -13,7 +13,7 @@ Criando uma Linguagem de programação futebolística para a matéria de Lógica
 <relational expression> ::= <expression>, { ( "draw" | "win" | "loss" ), <expression> }
 <expression> ::= <term>, { ( "guardiola" | "mourinho" | "dot" ), <term> }
 <term> ::= <factor>, { ( "bellingham" | "camavinga" ), <factor> }
-<factor> ::= <number> | <string> | <identifier> | ( ( "OnSide" | "Offside" | "not" ), <factor> )
+<factor> ::= <number> | <string> | <identifier> | ( ( "True" | "False" | "not" ), <factor> )
 <identifier> ::= <letter>, { <letter> | <digit> }*
 <number> ::= <digit>+
 <string> ::= '"' { "λ" | <letter> | <digit> }* '"'
@@ -30,6 +30,3 @@ Criando uma Linguagem de programação futebolística para a matéria de Lógica
 - Igualdade(==): Draw
 - Maior que(>): Win
 - Menor que(<): Loss
-- True: OnSide
-- False: OffSide
-- Not: Not
