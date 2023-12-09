@@ -70,14 +70,15 @@ extern int yydebug;
     T_LOSS = 271,                  /* T_LOSS  */
     T_GUARDIOLA = 272,             /* T_GUARDIOLA  */
     T_MOURINHO = 273,              /* T_MOURINHO  */
-    T_FERGUSON = 274,              /* T_FERGUSON  */
+    T_DOT = 274,                   /* T_DOT  */
     T_BELLINGHAM = 275,            /* T_BELLINGHAM  */
     T_CAMAVINGA = 276,             /* T_CAMAVINGA  */
     T_ONSIDE = 277,                /* T_ONSIDE  */
     T_OFFSIDE = 278,               /* T_OFFSIDE  */
     T_NOT = 279,                   /* T_NOT  */
     T_NUMBER = 280,                /* T_NUMBER  */
-    T_STRING_LITERAL = 281         /* T_STRING_LITERAL  */
+    T_STRING_LITERAL = 281,        /* T_STRING_LITERAL  */
+    T_VAR = 282                    /* T_VAR  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif

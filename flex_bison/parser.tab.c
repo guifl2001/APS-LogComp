@@ -120,7 +120,7 @@ enum yysymbol_kind_t
   YYSYMBOL_T_LOSS = 16,                    /* T_LOSS  */
   YYSYMBOL_T_GUARDIOLA = 17,               /* T_GUARDIOLA  */
   YYSYMBOL_T_MOURINHO = 18,                /* T_MOURINHO  */
-  YYSYMBOL_T_FERGUSON = 19,                /* T_FERGUSON  */
+  YYSYMBOL_T_DOT = 19,                     /* T_DOT  */
   YYSYMBOL_T_BELLINGHAM = 20,              /* T_BELLINGHAM  */
   YYSYMBOL_T_CAMAVINGA = 21,               /* T_CAMAVINGA  */
   YYSYMBOL_T_ONSIDE = 22,                  /* T_ONSIDE  */
@@ -142,7 +142,8 @@ enum yysymbol_kind_t
   YYSYMBOL_relational_expression = 38,     /* relational_expression  */
   YYSYMBOL_expression = 39,                /* expression  */
   YYSYMBOL_term = 40,                      /* term  */
-  YYSYMBOL_factor = 41                     /* factor  */
+  YYSYMBOL_factor = 41,                    /* factor  */
+  YYSYMBOL_T_VAR = 42                      /* T_VAR  */
 };
 typedef enum yysymbol_kind_t yysymbol_kind_t;
 
@@ -552,11 +553,11 @@ static const char *const yytname[] =
   "\"end of file\"", "error", "\"invalid token\"", "T_LAMBDA", "T_ASSIGN",
   "T_CONDITIONAL", "T_LOOP", "T_ELSE", "T_IDENTIFIER", "T_INT", "T_STRING",
   "T_EQUAL", "T_AND", "T_OR", "T_DRAW", "T_WIN", "T_LOSS", "T_GUARDIOLA",
-  "T_MOURINHO", "T_FERGUSON", "T_BELLINGHAM", "T_CAMAVINGA", "T_ONSIDE",
+  "T_MOURINHO", "T_DOT", "T_BELLINGHAM", "T_CAMAVINGA", "T_ONSIDE",
   "T_OFFSIDE", "T_NOT", "T_NUMBER", "T_STRING_LITERAL", "','", "'{'",
   "'}'", "$accept", "sentence", "assign", "conditional", "loop", "block",
   "boolean_expression", "boolean_clause", "relational_expression",
-  "expression", "term", "factor", YY_NULLPTR
+  "expression", "term", "factor, "T_VAR", YY_NULLPTR
 };
 
 static const char *

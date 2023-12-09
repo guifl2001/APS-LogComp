@@ -12,6 +12,7 @@
 %token T_IDENTIFIER
 %token T_INT
 %token T_STRING
+%token T_VAR
 %token T_EQUAL
 %token T_AND
 %token T_OR
@@ -20,7 +21,7 @@
 %token T_LOSS
 %token T_GUARDIOLA
 %token T_MOURINHO
-%token T_FERGUSON
+%token T_DOT
 %token T_BELLINGHAM
 %token T_CAMAVINGA
 %token T_ONSIDE
@@ -39,7 +40,7 @@ sentence : T_LAMBDA
          | loop
          ;
 
-assign : T_IDENTIFIER ',' T_ASSIGN boolean_expression
+assign : T_VAR T_IDENTIFIER ',' T_ASSIGN boolean_expression
        ;
 
 conditional : T_CONDITIONAL boolean_expression block T_ELSE block
@@ -64,7 +65,7 @@ relational_expression : expression T_DRAW | T_WIN | T_LOSS | T_ONSIDE | T_OFFSID
                    ;
 
 expression : term
-          | expression T_GUARDIOLA | T_MOURINHO | T_FERGUSON term
+          | expression T_GUARDIOLA | T_MOURINHO | T_DOT term
           ;
 
 term : factor
