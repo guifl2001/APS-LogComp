@@ -4,7 +4,7 @@ Criando uma Linguagem de programação futebolística para a matéria de Lógica
 # EBNF
 ```go
 <sentence> ::= ( "λ" | <assign> | <conditional> | <loop> )
-<assign> ::= <identifier>, "=", <boolean expression>
+<assign> ::= "var", <identifier>, "=", <boolean expression>
 <conditional> ::= "If", <boolean expression>, <block>, [ "Else:", <block> ]
 <loop> ::= "For", <boolean expression>, <block>
 <block> ::= "{", <sentence>, "}"
