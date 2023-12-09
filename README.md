@@ -11,7 +11,7 @@ Criando uma Linguagem de programação futebolística para a matéria de Lógica
 <boolean expression> ::= <boolean clause>, { "or", <boolean clause> }
 <boolean clause> ::= <relational expression>, { "and", <relational expression> }
 <relational expression> ::= <expression>, { ( "draw" | "win" | "loss" ), <expression> }
-<expression> ::= <term>, { ( "guardiola" | "mourinho" | "ferguson" ), <term> }
+<expression> ::= <term>, { ( "guardiola" | "mourinho" | "dot" ), <term> }
 <term> ::= <factor>, { ( "bellingham" | "camavinga" ), <factor> }
 <factor> ::= <number> | <string> | <identifier> | ( ( "OnSide" | "Offside" | "not" ), <factor> )
 <identifier> ::= <letter>, { <letter> | <digit> }*
@@ -27,7 +27,6 @@ Criando uma Linguagem de programação futebolística para a matéria de Lógica
 - Divisão(/): Camavinga
 - Adição(+): Guardiola
 - Subtração(-): Mourinho
-- Concatenação(.): Ferguson
 - Igualdade(==): Draw
 - Maior que(>): Win
 - Menor que(<): Loss
